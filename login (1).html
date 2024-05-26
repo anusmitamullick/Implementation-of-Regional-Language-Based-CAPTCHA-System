@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Login Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="login.css">
+    
+</head>
+<body>
+    <div class="login-form">
+        <div class="form-title">
+            লগইন
+           
+
+        </div>
+        <div class="form-input">
+            <label for="username"></label>
+           
+              <input type="text" id="username" placeholder="ইউজার নেম" required>    
+         
+        </div>
+        <div class="form-input">
+            <label for="password"></label>
+            <input type="password" id="password" placeholder="পাসওয়ার্ড" required>
+           
+        </div>
+        <div class="captcha">
+            <label for="captcha-input">  </label>
+            <div class="preview"> </div>
+
+            <div class="captcha-form">
+                <input type="text" id="captcha-form"placeholder="ক্যাপচা লিখুন" >
+               
+                <button class="captcha-refresh">
+                    <i class="fa fa-refresh"></i>
+                </button>
+            
+
+            </div>
+            <div class="form-input">
+             <button id="Submit">জমা করুন</button>
+           
+                 
+                   
+                 <p>অ্যাকাউন্ট নেই? 
+                    <a href="#">   রেজিস্ট্রেশন করুন</a> </p>
+            </div>
+              <div class="container">
+                <div class="keyboard">
+                    <div class="row">
+                        <button class="key" data-char="অ">অ</button>
+                        <button class="key" data-char="আ">আ</button>
+                        <button class="key" data-char="ই">ই</button>
+                        <button class="key" data-char="ঈ">ঈ</button>
+                        <button class="key" data-char="উ">উ</button>
+                        <button class="key" data-char="ঊ">ঊ</button>
+                        <button class="key" data-char="ঋ">ঋ</button>
+                        <button class="key" data-char="ঌ ">ঌ </button>
+                        <button class="key" data-char="এ">এ</button>
+                        <button class="key" data-char="ঐ">ঐ</button>
+                        <button class="key" data-char="ও">ও</button>
+                        <button class="key" data-char="ঔ">ঔ</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="ক">ক</button>
+                        <button class="key" data-char="খ">খ</button>
+                        <button class="key" data-char="গ">গ</button>
+                        <button class="key" data-char="ঘ">ঘ</button>
+                        <button class="key" data-char="ঙ">ঙ</button>
+                        <button class="key" data-char="চ">চ</button>
+                        <button class="key" data-char="ছ">ছ</button>
+                        <button class="key" data-char="জ">জ</button>
+                        <button class="key" data-char="ঝ">ঝ</button>
+                        <button class="key" data-char="ঞ">ঞ</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="ট">ট</button>
+                        <button class="key" data-char="ঠ">ঠ</button>
+                        <button class="key" data-char="ড">ড</button>
+                        <button class="key" data-char="ঢ">ঢ</button>
+                        <button class="key" data-char="ণ">ণ</button>
+                        <button class="key" data-char="ত">ত</button>
+                        <button class="key" data-char="থ">থ</button>
+                        <button class="key" data-char="দ">দ</button>
+                        <button class="key" data-char="ধ">ধ</button>
+                        <button class="key" data-char="ন">ন</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="প">প</button>
+                        <button class="key" data-char="ফ">ফ</button>
+                        <button class="key" data-char="ব">ব</button>
+                        <button class="key" data-char="ভ">ভ</button>
+                        <button class="key" data-char="ম">ম</button>
+                        <button class="key" data-char="য">য</button>
+                        <button class="key" data-char="র">র</button>
+                        <button class="key" data-char="ল">ল</button>
+                        <button class="key" data-char="শ">শ</button>
+                        <button class="key" data-char="ষ">ষ</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="স">স</button>
+                        <button class="key" data-char="হ">হ</button>
+                        <button class="key" data-char="ড়">ড়</button>
+                        <button class="key" data-char="ঢ়">ঢ়</button>
+                        <button class="key" data-char="য়">য়</button>
+                        <button class="key" data-char="ৎ">ৎ</button>
+                       
+                    </div> 
+                <!--    <div class="row">
+                        <button class="key" data-char="अ">अ</button>
+                        <button class="key" data-char="आ">आ</button>
+                        <button class="key" data-char="इ">इ</button>
+                        <button class="key" data-char="ई">ई</button>
+                        <button class="key" data-char="उ">उ</button>
+                        <button class="key" data-char="ऊ">ऊ</button>
+                        <button class="key" data-char="ए">ए</button>
+                        <button class="key" data-char="ऐ">ऐ</button>
+                        <button class="key" data-char="ओ">ओ</button>
+                        <button class="key" data-char="औ">औ</button>
+                        
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="क">क</button>
+                        <button class="key" data-char="ख">ख</button>
+                        <button class="key" data-char="ग">ग</button>
+                        <button class="key" data-char="घ">घ</button>
+                        <button class="key" data-char="ङ">ङ</button>
+                        <button class="key" data-char="च">च</button>
+                        <button class="key" data-char="छ">छ</button>
+                        <button class="key" data-char="ज">ज</button>
+                        <button class="key" data-char="झ">झ</button>
+                        <button class="key" data-char="ञ">ञ</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="ट">ट</button>
+                        <button class="key" data-char="ठ">ठ</button>
+                        <button class="key" data-char="ड">ड</button>
+                        <button class="key" data-char="ढ">ढ</button>
+                        <button class="key" data-char="ण">ण</button>
+                        <button class="key" data-char="त">त</button>
+                        <button class="key" data-char="थ">थ</button>
+                        <button class="key" data-char="द">द</button>
+                        <button class="key" data-char="ध">ध</button>
+                        <button class="key" data-char="न">न</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="प">प</button>
+                        <button class="key" data-char="फ">फ</button>
+                        <button class="key" data-char="ब">ब</button>
+                        <button class="key" data-char="भ">भ</button>
+                        <button class="key" data-char="म">म</button>
+                        <button class="key" data-char="य">य</button>
+                        <button class="key" data-char="र">र</button>
+                    </div>
+                    <div class="row">
+                        <button class="key" data-char="ल">ल</button>
+                        <button class="key" data-char="व">व</button>
+                       <button class="key" data-char="श">श</button>
+                       <button class="key" data-char="ष">ष</button>
+                       <button class="key" data-char="स">स</button>
+                       <button class="key" data-char="ह">ह</button>
+                    </div>-->
+
+
+
+                </div>  
+            </div>
+                                
+            <br> <br> <br> <br>
+            <footer>
+              <!--  &copy;copyright@অর্চিতা ত্রিপাঠী ২०২৩ .-->
+              &copy;copyright@ Regional Language Captcha 2023
+            </footer>  
+           
+        </div>
+    </div>
+
+       
+    </form>
+    <script src="login.js" ></script>
+    
+    
+
+</body>
+</html>

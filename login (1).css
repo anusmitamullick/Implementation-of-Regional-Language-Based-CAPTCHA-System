@@ -1,0 +1,174 @@
+body {
+    background-color:rgb(12, 104, 150);
+    
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:30%;
+    height: max-content;
+    max-width: 550 px;
+    background: #77bbe1af;
+    
+    padding: 20px 30px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.1);
+}
+.login-form .form-title {
+    font-family:"Montserrat", sans-serif;
+    text-align:center;
+    font-size:30px;
+    font-weight:400;
+    margin:20px 0px 30px;
+    color: black;
+}
+
+
+.login-form .form-input label,
+.login-form .captcha label{
+    display:block;
+    font-size:15px;
+    color:black;
+    margin-bottom: 5px;
+}
+.login-form .form-input input{
+    width:80%;
+    padding:10px;
+    border:1px solid #00ffbb;
+    font-size:15px;
+
+}
+.login-form .captcha{
+    margin:15px 0px;
+
+}
+.login-form .captcha  .preview{
+    color:#0f0a0af5;
+    width:100%;
+    text-align:center;
+    height:40px;
+    line-height:50px;
+    
+    letter-spacing:8px;
+    border:1px dashed #888;
+    font-family:monospace;
+}
+.login-form .captcha .preview span {
+    display:inline-block;
+    user-select: none;
+}
+.login-form .captcha .captcha-form{
+    display:flex;
+    
+}
+.login-form .captcha .captcha-form input{
+    width:100%;
+    padding:8px;
+    border:1px solid #888;
+
+}
+.login-form .captcha .captcha-form .captcha-refresh{
+
+    width: 40px;
+    border:none;
+    outline: none;
+    background: rgba(136, 136, 136, 0.834);
+    background-image: url("file:///C:/Users/ARCHITA/OneDrive/Documents/art_&_craft_ecommerce%20website/captcha.jpg");
+    background-size: cover;
+    color:#dad345;
+    cursor:pointer;
+
+}
+
+
+.login-form #Submit {
+    margin-top: 5px;
+    width:90%;
+    padding:10px;
+    border-color: #a70a6b;
+    background-color: #062f4bde;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+    
+}
+.login-form #Submit:hover {
+    background-color: #a70a6b;
+    color: rgba(255, 255, 255, 0.938);
+  }
+
+p {
+    margin: 0;
+    padding: 0;
+    text-align:right;
+}
+
+a {
+    color: rgba(12, 11, 11, 0.999);
+    text-decoration: none;
+    
+    
+    font-size: 14px;
+}
+
+ .login-form .container {
+    width: 250px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Keyboard styles */
+.keyboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.key {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(140, 225, 246);
+    border: 1px solid #0c166d;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Special keys styles */
+.key:hover {
+    background-color: #3675b3;
+}
+
+.backspace {
+    background-color: #f00;
+    color: #5ea3e0;
+}
+
+.space {
+    width: 100px;
+}
+
+
+ footer {
+    text-align: center;
+    background-color: #3ab0db3b;
+    color: #100f0f;
+    padding: 10px 0;
+
+}
